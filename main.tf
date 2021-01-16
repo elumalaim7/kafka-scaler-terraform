@@ -1,9 +1,9 @@
 provider "azurerm" {
   version = ">= 2.40.0"
 
+  subscription_id = var.service_principal_subscription_id
   client_id       = var.service_principal_client_id
   client_secret   = var.service_principal_client_secret
-  subscription_id = var.service_principal_subscription_id
   tenant_id = var.service_principal_tenant_id
 
   features {}
