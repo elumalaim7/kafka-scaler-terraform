@@ -40,9 +40,9 @@ resource "azurerm_kubernetes_cluster" "aks_app" {
     vm_size             = var.vm_size
     type                = "VirtualMachineScaleSets"
     enable_auto_scaling = true
-    min_count           = 3
-    max_count           = 4
-    max_pods            = 100
+    min_count           = 2
+    max_count           = 3
+    max_pods            = 4
   }
 
   service_principal {
