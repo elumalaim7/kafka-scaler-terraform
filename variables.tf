@@ -56,7 +56,7 @@ variable resource_group_name {
 variable location {
   type        = string
   description = "Azure location where the infrastructure will be provisioned"
-  default     = "southindia"
+  default     = "eastus"
 }
 
 # Event Hubs (topics)
